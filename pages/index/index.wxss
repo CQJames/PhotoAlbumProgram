@@ -1,0 +1,41 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: -100rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #3399FF;
+}
+
+.upload {
+  margin-top: 10px;
+  width: 100%;
+  height: 375px;
+  border-style: solid;
+  border-color: burlywood;
+  border-width: 10rpx;
+  box-sizing: border-box;
+}
+
+.uploadImg {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.uploadButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #3399FF;
+}

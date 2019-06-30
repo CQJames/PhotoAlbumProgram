@@ -1,0 +1,56 @@
+/* pages/album/album.wxss */
+page {
+  background: burlywood;
+}
+/* 卡片 */
+.item-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 92%;
+  margin: 4%;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+  border-radius: 5px;
+}
+
+/* 上传人和时间 */
+.item-name-time {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* 上传人 */
+.item-name {
+  margin-top: 20px;
+}
+
+/* 时间 */
+.item-time {
+  margin-top: 20px;
+}
+
+/* 图片 */
+.img {
+  width: 130px;
+  height: 130px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.item-id {
+  display: none;
+}
+
+.item-delete {
+  margin-top: 15%;
+  margin-left: 65%;
+  color: white;
+  font-size: 13px;
+  background-color: red;
+}

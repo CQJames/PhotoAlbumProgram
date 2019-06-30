@@ -1,0 +1,12 @@
+<!--pages/album/album.wxml-->
+<block wx:for="{{dataList}}" wx:key="item">
+  <view class='item-container'>
+    <image class='img' src='{{item.imageUrl}}'></image>
+    <view class='item-name-time'>
+      <text class='item-name'>上传者：{{item.uploader}}</text>
+      <text class='item-time'>上传时间：{{item.time}}</text>
+      <button class='item-delete' data-id='{{item._id}}' data-imageurl='{{item.imageUrl}}' bindtap='deleteImage'>删除</button>
+    </view>    
+  </view>
+</block>
+

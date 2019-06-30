@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/album/album",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3399FF",
+    "navigationBarTitleText": "相册小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "上传照片",
+        "iconPath": "assets/pics1.png",
+        "selectedIconPath": "assets/pics2.png"
+      },
+      {
+        "pagePath": "pages/album/album",
+        "text": "我的照片墙",
+        "iconPath": "assets/self1.png",
+        "selectedIconPath": "assets/self2.png"
+      }
+    ],
+    "selectedColor": "#3399FF"
+  },
+  "sitemapLocation": "sitemap.json"
+}
