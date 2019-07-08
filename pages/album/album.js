@@ -70,6 +70,8 @@ Page({
     //下拉刷新图片列表
     this.data.pageIndex = 1;
     this.fetchImageList("刷新中");
+    //停止下拉刷新
+    wx.stopPullDownRefresh();
   },
   /**
    * 页面上拉触底事件的处理函数
@@ -110,8 +112,6 @@ Page({
             if (that.data.pageIndex == 1) {
               //如果要显示第一页，无需拼接图片列表数据
               tempImageList = res.data;
-              //处理下拉情况
-              wx.stopPullDownRefresh();
             }else {
               //否则，拼接新的图片列表数据
               tempImageList = tempImageList.concat(res.data);
